@@ -1,0 +1,145 @@
+/* Общие настройки */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Шапка (header) */
+header {
+    background-color: #a84242;
+    ;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+    header .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+        header .menu li {
+            margin-right: 20px;
+        }
+
+            header .menu li:last-child {
+                margin-right: 0;
+            }
+
+        header .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            header .menu a:hover {
+                background-color: #495057;
+            }
+
+/* Основной контент (main) */
+main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Таблицы (стилизация для table.css) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+    table th,
+    table td {
+        padding: 12px 15px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #a84242;
+        color: #fff;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+/* Кнопки */
+a[title="Edit"], a[title="Delete Item"], a[title="Save"], a[title="Cancel"] {
+    display: inline-block;
+    margin-right: 5px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+    a[title="Edit"]:hover {
+        color: #0056b3;
+    }
+
+    a[title="Delete Item"]:hover {
+        color: #dc3545;
+    }
+
+    a[title="Save"]:hover {
+        color: #28a745;
+    }
+
+    a[title="Cancel"]:hover {
+        color: #ffc107;
+    }
+
+/* Футер (footer) */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        header .menu li {
+            margin: 10px 0;
+        }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table th,
+    table td {
+        padding: 8px 10px;
+    }
+}

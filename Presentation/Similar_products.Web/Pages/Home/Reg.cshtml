@@ -1,0 +1,17 @@
+﻿@page
+@model MedicinalSystem.Web.Pages.Home.RegModel
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml"; // Указываем путь к макету
+}
+<div class="register-container">
+    <h1>Login</h1>
+    <form id="registrationForm">
+        <input type="text" id="registrationUsername" placeholder="Username" required />
+        <input type="text" id="registrationFullName" placeholder="FullName" required />
+        <input type="password" id="registrationPassword" placeholder="Password" required />
+        <button type="submit">Регистрицая</button>
+        <p id="registrationErrorMsg" style="display: none; color: red;"></p>
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<script rel="stylesheet" src="~/js/authentication/registration.js" asp-append-version="true"></script>

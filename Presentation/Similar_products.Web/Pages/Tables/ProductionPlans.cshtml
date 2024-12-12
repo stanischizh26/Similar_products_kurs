@@ -1,0 +1,21 @@
+﻿@page
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml"; // Указываем путь к макету
+    ViewData["Title"] = "plans list";
+}
+<div id="filter-container">
+    <label for="filter-name">Фильтр по имени продукта:</label>
+    <input type="text" id="filter-name" oninput="applyFilters()">
+</div>
+<div id="table-container">
+</div>
+<div id="modal" class="modal-info">
+    <div class="modal-info-content">
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<script rel="stylesheet" src="~/js/productionPlan/edit.js" asp-append-version="true"></script>
+<script rel="stylesheet" src="~/js/productionPlan/create.js" asp-append-version="true"></script>
+<script rel="stylesheet" src="~/js/productionPlan/info.js" asp-append-version="true"></script>
+<script rel="stylesheet" src="~/js/productionPlan/get.js" asp-append-version="true"></script>
+<script rel="stylesheet" src="~/js/crud.js" asp-append-version="true"></script>

@@ -1,0 +1,99 @@
+﻿/* Основные стили для body */
+body {
+    font-family: 'Arial', sans-serif; /* Шрифт для всего документа */
+    background-color: #f4f4f4; /* Светлый фон страницы */
+    margin: 0;
+    padding: 20px; /* Внутренние отступы для body */
+}
+
+/* Стили для контейнера фильтра */
+#filter-container {
+    background-color: #ffffff; /* Белый фон */
+    border: 1px solid #dcdcdc; /* Светлая рамка */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 20px; /* Внутренние отступы */
+    margin-bottom: 20px; /* Отступ снизу */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+    /* Стили для метки */
+    #filter-container label {
+        font-size: 18px; /* Размер шрифта */
+        font-weight: bold; /* Жирный шрифт */
+        color: #333; /* Цвет текста */
+        display: block; /* Блочный элемент */
+        margin-bottom: 10px; /* Отступ снизу */
+    }
+
+/* Стили для поля ввода */
+#filter-name {
+    width: 100%; /* Ширина 100% */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Светлая рамка */
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px; /* Размер шрифта */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Плавный переход */
+}
+
+    /* Эффект при фокусировке на поле ввода */
+    #filter-name:focus {
+        border-color: #007bff; /* Цвет рамки при фокусировке */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Легкая тень при фокусировке */
+        outline: none; /* Убираем стандартный контур */
+    }
+
+/* Стили для контейнера таблицы */
+#table-container {
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 8px; /* Скругленные углы */
+    overflow: hidden; /* Скрытие переполнения */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Стили для модального окна */
+.modal-info {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Фиксированное положение */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ширина 100% */
+    height: 100%; /* Высота 100% */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    z-index: 1000; /* Поверх остальных элементов */
+}
+
+/* Стили для содержимого модального окна */
+.modal-info-content {
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 20px; /* Внутренние отступы */
+    width: 400px; /* Ширина модального окна */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    margin: auto; /* Центрирование содержимого */
+}
+
+/* Кнопка закрытия модального окна */
+.close-modal {
+    cursor: pointer; /* Указатель при наведении */
+    color: #ff0000; /* Красный цвет */
+    font-weight: bold; /* Жирный шрифт */
+    float: right; /* Выровнять вправо */
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убрать рамку */
+    padding: 10px 15px; /* Внутренние отступы */
+    border-radius: 5px; /* Скругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход */
+}
+
+    /* Эффект при наведении на кнопку */
+    button:hover {
+        background-color: #0056b3; /* Темнее при наведении */
+    }

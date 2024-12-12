@@ -1,0 +1,20 @@
+﻿@page
+@model MedSimilar_productsicinalSystem.Web.Pages.Home.AuthModel;
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml"; // Указываем путь к макету
+}
+<div class="authentication-container">
+    <h1>Вход в аккаунт</h1>
+    <form id="authenticationForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit">Вход</button>
+        <p class="error" id="errorMsg" style="display: none;">Invalid username or password</p>
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+<script rel="stylesheet" src="~/js/authentication/authentication.js" asp-append-version="true"></script>

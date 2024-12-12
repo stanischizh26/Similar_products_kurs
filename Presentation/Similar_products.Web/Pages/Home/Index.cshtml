@@ -1,0 +1,53 @@
+﻿@page
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml"; // Указываем путь к макету
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добро пожаловать!</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        .welcome-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .welcome-button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать на наш сайт!</h1>
+    <p>Мы рады видеть вас здесь. Исследуйте и наслаждайтесь!</p>
+    <button class="welcome-button" onclick="alert('Спасибо, что посетили наш сайт!')">Начать</button>
+</body>
+</html>

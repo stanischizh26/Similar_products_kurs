@@ -1,0 +1,87 @@
+﻿/* Стили для модального списка */
+.modal-list {
+    position: absolute; /* Позиционирование относительно ячейки */
+    z-index: 1000;
+    width: 300px; /* Ограничиваем ширину */
+    max-height: 350px; /* Ограничиваем высоту окна */
+    background-color: #f9f9f9; /* Светлый фон */
+    border: 2px solid #ccc; /* Светлая граница */
+    border-radius: 15px; /* Более скругленные углы */
+    overflow-y: scroll; /* Вертикальный скролл */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    color: #333; /* Темный текст */
+    animation: fade-in 0.4s ease-in-out;
+}
+
+/* Анимация появления модального окна */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Содержимое модального окна */
+.modal-list-content {
+    height: 100%; /* Заполняет все доступное пространство */
+    overflow-y: auto; /* Добавляем вертикальный скролл, если содержимое выходит за пределы */
+    padding: 15px;
+}
+
+/* Шапка модального окна */
+.modal-list-header {
+    background-color: #007bff; /* Синий фон для шапки */
+    padding: 12px;
+    font-weight: bold;
+    color: #fff; /* Белый текст */
+    border-bottom: 2px solid #0056b3; /* Темная граница снизу */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* Кнопка закрытия в шапке */
+    .modal-list-header .close {
+        font-size: 20px; /* Размер кнопки закрытия */
+        color: #fff; /* Белый цвет */
+        cursor: pointer;
+        transition: transform 0.2s ease, color 0.3s ease;
+    }
+
+        .modal-list-header .close:hover {
+            color: #ff4d4d; /* Ярко-красная подсветка при наведении */
+            transform: rotate(90deg); /* Поворот при наведении */
+        }
+
+/* Основное содержимое модального окна */
+.modal-list-body {
+    padding-top: 10px;
+    background-color: #ffffff; /* Белый фон для тела */
+}
+
+/* Элементы списка в модальном окне */
+.modal-list ul {
+    list-style-type: none; /* Убираем маркеры */
+    padding: 0;
+    margin: 0;
+}
+
+.modal-list li {
+    padding: 12px;
+    background-color: #f0f0f0; /* Светло-серый фон для элементов */
+    border-radius: 8px; /* Скругленные края элементов */
+    margin-bottom: 8px; /* Расстояние между элементами */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: #333; /* Темный текст */
+}
+
+    .modal-list li:hover {
+        background-color: #e6e6e6; /* Более светлый фон при наведении */
+        transform: scale(1.02); /* Лёгкое увеличение при наведении */
+        cursor: pointer;
+    }
