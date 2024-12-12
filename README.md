@@ -1,0 +1,1 @@
+[![build and test](https://github.com/stanischizh26/Similar_products_kurs/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/stanischizh26/Similar_products_kurs/actions/workflows/dotnet-desktop.yml)
